@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="card">
+          <div class="upper-container">
+            <div class="notifications">
+              Notifications <span class="not-3" id="notification">3</span>
+            </div>
+            <div class="mark" id="markAll" onclick="removeNot()">
+              Mark all as read
+            </div>
+          </div>
+          <div class="not-Container gray-background">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="mark-profil"
+            />
+            <div class="nd-container">
+              <div class="bold-name">Mark Webber</div>
+              <div class="date">1m ago</div>
+            </div>
+            <div class="balans">
+              <div class="pale-status">reacted to your recent post</div>
+              <div class="dark-pale-status">My first tournament today!</div>
+              <span class="red-dot"></span>
+            </div>
+          </div>
+          <div class="not-Container , gray-background">
+            <img
+              src="assets/images/avatar-angela-gray.webp"
+              alt="angele-profil"
+            />
+            <div class="nd-container">
+              <div class="bold-name">Angela Gray</div>
+              <div class="date">5m ago</div>
+            </div>
+            <div class="balans">
+              <div class="pale-status">followed you</div>
+              <span class="red-dot"></span>
+            </div>
+          </div>
+          <div class="not-Container gray-background">
+            <img
+              src="assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob-profil"
+            />
+            <div class="nd-container">
+              <div class="bold-name">Jacob Thompson</div>
+              <div class="date">1 day ago</div>
+            </div>
+            <div class="balans">
+              <div class="pale-status">has joined your group</div>
+              <span class="chess-club"> Chess Club</span>
+              <span class="red-dot"></span>
+            </div>
+          </div>
+          <div class="not-Container">
+            <img
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="rizky-profil"
+            />
+            <div class="nd-container">
+              <div class="bold-name">Rizky Hasanuddin</div>
+              <div class="date">5 days ago</div>
+            </div>
+            <div class="balans">
+              <div class="pale-status">sent you a private message</div>
+            </div>
+          </div>
+          <div class="dm-text">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+          <div class="not-Container">
+            <img
+              src="assets/images/avatar-kimberly-smith.webp"
+              alt="kimberly-profil"
+            />
+            <div class="nd-container">
+              <div class="bold-name">Kimberly Smith</div>
+              <div class="date">1 week ago</div>
+            </div>
+            <div class="balans">
+              <div class="pale-status">commented on your picture</div>
+            </div>
+            <img id="girl" src="./assets/images/image-chess.webp" alt="" />
+          </div>
+          <div class="natan-container">
+            <img
+              src="assets/images/avatar-nathan-peterson.webp"
+              alt="nathan-profil"
+            />
+            <div class="toplu">
+              <p>
+                <span class="bold-name">Nathan Peterson</span>
+                <span class="pale-status">reacted to your recent post</span>
+                <span class="dark-pale-status"
+                  >5 end-game strategies to increase your win rate</span
+                >
+                <br />
+                <span class="date">2 weeks ago</span>
+              </p>
+            </div>
+          </div>
+          <div class="not-Container">
+            <img src="assets/images/avatar-anna-kim.webp" alt="anna-profil" />
+            <div class="nd-container">
+              <div class="bold-name">Anna Kim</div>
+              <div class="date">2 weeks ago</div>
+            </div>
+            <div class="balans">
+              <div class="pale-status">left the group</div>
+              <span class="chess-club"> Chess Club</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/AlaskanCrab" target="_blank">AlaskanCrab</a
+        >.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
